@@ -262,7 +262,7 @@ transport = {
 	icon_frame = 9
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	is_designable = no
+	is_designable = yes
 	class = shipclass_transport
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
