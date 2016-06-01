@@ -112,7 +112,7 @@
 #		# }
 #	}
 #	
-#	attraction = {#executed with a pop scope, country is stored in root
+#	attraction = {#executed with a pop scope, country is stored in root, faction is stored in from
 #		base = 10
 #		modifier = {
 #			add = 10000

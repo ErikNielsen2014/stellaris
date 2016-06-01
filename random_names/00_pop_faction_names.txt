@@ -101,6 +101,8 @@ pop_faction_name_parts_list = {
 		"Loyalist Bloc" = 1
 		"Loyalist Lobby" = 1
 		"Loyalist Insiders" = 1
+		"Loyalist Fringe" = 1
+		"Loyalist Moderates" = 1
 	}
 }
 

@@ -5,8 +5,8 @@ ship_section_template = {
 	entity = "corvette_M1S1_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	# Guns
-	weapon_preferences = { weapon_type_kinetic }
+	# Guns & Lasers
+	weapon_preferences = { weapon_role_anti_armor weapon_role_anti_shield }
 	ai_weight = {
 		modifier = {
 			factor = 2.0
@@ -16,6 +16,12 @@ ship_section_template = {
 				has_ai_personality = spiritual_seekers
 				has_ai_personality = democratic_crusaders
 				has_ai_personality = hive_mind
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = erudite_explorers
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = xenophobic_isolationists				
+				has_ai_personality = federation_builders
+				has_ai_personality = ruthless_capitalists				
 			}
 		}
 	}
@@ -46,18 +52,12 @@ ship_section_template = {
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	# Lasers & Missiles
-	weapon_preferences = { weapon_type_energy weapon_type_explosive }
+	# Missiles
+	weapon_preferences = { weapon_role_long_range }
 	ai_weight = {
 		modifier = {
 			factor = 2.0
-			OR = {
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = erudite_explorers
-				has_ai_personality = fanatic_purifiers
-				has_ai_personality = xenophobic_isolationists				
-				has_ai_personality = federation_builders
-				has_ai_personality = ruthless_capitalists	
+			OR = {	
 				has_ai_personality = peaceful_traders
 				has_ai_personality = slaving_despots
 				has_ai_personality = harmonious_hierarchy

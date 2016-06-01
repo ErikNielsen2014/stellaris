@@ -19,6 +19,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "arc_emitter"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	component_set = "SPACE_CLOUD_WEAPON_1"
 	prerequisites = { "tech_space_cloud_weapon_1" }
@@ -35,6 +36,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "arc_emitter"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	component_set = "SPACE_CLOUD_WEAPON_1"
 	prerequisites = { "tech_space_cloud_weapon_1" }

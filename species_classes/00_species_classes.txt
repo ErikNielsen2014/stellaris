@@ -24,7 +24,6 @@ MAM = {
 		"mam1"
 	}
 	custom_portraits = {#add additional portraits when customizing species
-		trigger = {	local_has_dlc = "Paradox Account Sign-up Bonus"	}
 		portraits = {
 			"mam16"
 		}
@@ -177,7 +176,7 @@ FUN = {
 		"fun11"		
 		"fun12"		
 		"fun13"		
-		"fun14"		# Rendered, Not animated, Clothes Not rendered
+		"fun14"
 		"fun15"
 	}
 	custom_portraits = {#add additional portraits when customizing species

@@ -68,10 +68,10 @@ AVI3 = {
 		}
 		observation_station = { }
 		outpost_station = {
-			random_names = {
+			#random_names = {
 				"Attentive Eye" "Watchful Eye" "Resting Eye" "Sharp Eye" "Scornful Eye" "Oblivious Eye" "Cunning Eye" "Zealous Eye" "Dauntless Eye" "Stubborn Eye"
-			}
-			sequential_name = "%O% Frontier Outpost"
+			#}
+			#sequential_name = "%O% Frontier Outpost"
 		}
 		
 		transport = {

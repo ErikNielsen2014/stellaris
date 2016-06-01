@@ -244,25 +244,23 @@ planet_separatists = {
 							species = { save_event_target_as = spawn_species }
 						}
 					}	
-					random_owned_pop = {
-						species = {
-							create_country = {
-								type = default
-								government = random
-								species = event_target:spawn_species
-								flag = random
-								ethos = random
-								ignore_initial_colony_error = yes
-							}
+					root.owner = {
+						create_country = {
+							type = default
+							government = random
+							species = event_target:spawn_species
+							flag = random
+							ethos = random
+							ignore_initial_colony_error = yes
 						}
 					}
 					last_created_country = {
-						set_timed_country_flag = { flag = day_0 days = 1 }
 						parameter:planet = { debug_scope_type = planet
 							owner = {
-								establish_communications = last_created_country
+								establish_communications_no_message = last_created_country
 							}
-							set_owner = prev
+							set_controller = last_created_country
+							set_owner = last_created_country
 						}
 						set_name = random
 						set_subject_of = {
@@ -592,7 +590,7 @@ planet_separatists = {
 				custom_tooltip = "POP_FACTION_PLANET_SEPARATIST_REBELLION_DESC"
 				hidden_effect = {
 					parameter:planet = { debug_scope_type = planet
-						save_event_target_as = rebelling_planet
+						save_event_target_as = planet
 						random_owned_pop = {
 							limit = {
 								NOT = {

@@ -809,6 +809,14 @@ tech_fusion_power = {
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_2
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_3
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -844,6 +852,14 @@ tech_cold_fusion_power = {
 	
 	weight_modifier = {
 		factor = 1.5
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_4
+		}	
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_5
+		}	
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -881,6 +897,14 @@ tech_antimatter_power = {
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_5
+		}			
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_6
+		}	
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -916,6 +940,10 @@ tech_zero_point_power = {
 	
 	weight_modifier = {
 		factor = 1.5
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_6
+		}	
 		modifier = {
 			factor = 1.25
 			research_leader = {

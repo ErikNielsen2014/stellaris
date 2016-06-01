@@ -522,6 +522,7 @@ faction = {
 }
 
 adversary = {
+	show_in_contacts_list = no
 	ai = {
 		enabled = no
 	}
@@ -623,6 +624,20 @@ fallen_empire = {
 			foreign_minister_module
 			interior_minister_module
 		}
+		
+		army_data = {
+			defense_army = {
+				fraction = {
+					factor = 25
+				}
+			}
+			
+			gene_warrior_army = {
+				fraction = {
+					factor = 75
+				}
+			}
+		}
 	}
 	modules = {
 		all_technology_module = {}
@@ -701,6 +716,7 @@ rebel = {
 
 # ambient object country type for moving props around
 ambient = {
+	show_in_contacts_list = no
 	ai = {
 		enabled = no
 	}

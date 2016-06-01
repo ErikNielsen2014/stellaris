@@ -1575,7 +1575,7 @@ building_colony_shelter = {
 	}
 	
 	planet_modifier = {
-		pop_ethic_shift = 0.20
+		pop_ethic_shift = 0.10
 	}
 	
 	potential = {
@@ -1712,6 +1712,7 @@ building_capital_3 = {
 	}
 	
 	allow = {
+		planet = { is_capital = yes }
 		custom_tooltip = {
 			text = "requires_pops_15"
 			planet = {
@@ -1925,15 +1926,18 @@ building_grand_mausoleum = {
 	}
 	
 	allow = {
-		exists = ruler
-		ruler = {
-			NOT = { has_leader_flag = built_monument }
-		}
-		planet = {
-			OR = {
-				has_building = "building_capital_1"
-				has_building = "building_capital_2"
-				has_building = "building_capital_3"
+		custom_tooltip = {
+			text = building_grand_mausoleum_allowed_tooltip
+			exists = ruler
+			ruler = {
+				NOT = { has_leader_flag = built_monument }
+			}
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
 			}
 		}
 	}
@@ -2599,7 +2603,7 @@ building_institute = {
 	}
 	
 	country_modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.05
 	}
 	
 	allow = {

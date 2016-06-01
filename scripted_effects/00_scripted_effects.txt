@@ -127,7 +127,7 @@ create_amoeba_country = {
 # Creates the country and saves it if it does not
 create_drone_country = {
 	if = {
-		limit = { NOT = { exists = event_target:drone_country 	} }
+		limit = { NOT = { exists = event_target:drone_country } }
 		create_country = {
 			name = "Mineral Extraction Operation"
 			type = drone

@@ -40,13 +40,13 @@ can_enslave_pop = {
 #Root = country
 #This = pop
 can_purge_pop = {
-	if = { 
-		limit = { 
-			OR = { 
+	if = {
+		limit = {
+			OR = {
 				ROOT = { has_policy_flag = purge_allowed_all }
 				AND = {
 					ROOT = { has_policy_flag = purge_allowed_xenos_only }
-					NOT = { 
+					NOT = {
 						OR = {
 							is_same_species = ROOT 
 							is_species = "ROBOT_POP_SPECIES_3"
@@ -54,12 +54,17 @@ can_purge_pop = {
 					}
 				}
 				AND = {
-					ROOT = { has_policy_flag = ai_servitude }
+					ROOT = {
+						OR = {
+							has_policy_flag = ai_servitude
+							has_policy_flag = ai_outlawed
+						}
+					}
 					is_species = "ROBOT_POP_SPECIES_3"
 				}
 				has_trait = trait_robotic_1 # allow if non-sentient robot
 				has_trait = trait_robotic_2 # allow if non-sentient robot
-			} 
+			}
 		}
 		always = yes
 		else = {
@@ -240,6 +245,7 @@ can_colonize_with_pop = {
 				has_modifier = culture_shock_machine_age 
 				has_modifier = culture_shock_atomic_age 
 				has_modifier = culture_shock_early_space_age 
+				is_sentient = no
 			}
 		}
 		custom_tooltip = {

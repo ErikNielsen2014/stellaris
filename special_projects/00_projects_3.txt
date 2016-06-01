@@ -62,7 +62,7 @@ special_project = {
 	#cost = 0
 	days_to_research = 30
 	tech_department = society_technology
-	timelimit = 3
+	timelimit = 100
 	picture = GFX_evt_sentient_AI
 	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
 

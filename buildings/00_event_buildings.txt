@@ -16,6 +16,8 @@ building_zanaam_obelisk = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Great Pyramid
@@ -35,6 +37,8 @@ building_great_pyramid = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Toy Factory
@@ -52,6 +56,8 @@ building_toy_factory = {
 
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Primitive Farm
@@ -105,6 +111,8 @@ building_mutant_landfill = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Vault (Empty)
@@ -124,6 +132,8 @@ building_vault = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Vault (Machine Park)
@@ -144,6 +154,8 @@ building_vault_2 = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Particle Accelerator
@@ -163,6 +175,8 @@ building_particle_accelerator = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # NEW EVENT BUILDING
@@ -179,6 +193,8 @@ building_odd_factory = {
 
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 
 # Quarantine Hospital
@@ -197,6 +213,8 @@ building_quarantine = {
 	
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }
 # Plague Memorial Building
 building_plague_memorial = {
@@ -215,4 +233,6 @@ building_plague_memorial = {
 	}
 	upgrades = {
 	}
+	
+	ai_special_building = yes
 }

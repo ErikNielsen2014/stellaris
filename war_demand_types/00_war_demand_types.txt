@@ -21,12 +21,24 @@ vassalize_country = {
 	}
 	
 	warscore_cost = {
-		base = 60	
+		base = 40
+
+		scaled_modifier = {
+			scope = parameter:country
+			add = 10
+			calc = planets_in_country
+		}		
 
 		scaled_modifier = {
 			scope = parameter:country
 			add = 0.5
 			calc = pop_count
+		}
+
+		scaled_modifier = {
+			scope = parameter:country
+			div = 0.05
+			calc = planets_in_country
 		}		
 		
 		modifier = {
@@ -172,8 +184,6 @@ vassalize_country = {
 					value > 0
 				}
 			}
-		}
-		hidden:fromfromfrom = {
 			custom_tooltip_fail = {
 				text = "war_demand_vassalize_country_no_vassals_of_vassals"
 				NOT = { exists = overlord }
@@ -450,6 +460,12 @@ cede_planet = {
 			add = 0.8
 			calc = pop_count
 		}
+		
+		scaled_modifier = {
+			scope = parameter:planet.owner
+			div = 0.05
+			calc = planets_in_country
+		}
 	
 		modifier = {
 			factor = 1.5
@@ -601,10 +617,13 @@ cede_planet = {
 			text = "war_demand_cede_planet_not_under_our_control"
 			parameter:planet = {
 				controller = {
-					fromfrom = {
-						is_war_participant = {
-							who = prev
-							side = from
+					OR = {
+						is_country = parameter:planet.owner
+						fromfrom = {
+							is_war_participant = {
+								who = prev
+								side = from
+							}
 						}
 					}
 				}
@@ -688,7 +707,7 @@ cede_planet = {
 		modifier = {
 			factor = 0.1
 			NOT = { 
-				this = { has_ai_personality_behaviour = conqueror } 
+				has_ai_personality_behaviour = conqueror 
 			}
 		}
 
@@ -762,6 +781,12 @@ liberate_planet = {
 			add = 0.8
 			calc = pop_count
 		}
+		
+		scaled_modifier = {
+			scope = parameter:planet.owner
+			div = 0.05
+			calc = planets_in_country
+		}
 
 		# Ruler Trait - Warlike
 		modifier = {
@@ -802,10 +827,7 @@ liberate_planet = {
 		}
 	}
 	
-	potential = {
-		hidden:parameter:planet = {
-			is_capital = no
-		}	
+	potential = {	
 		custom_tooltip_fail = {
 			text = "war_demand_cede_planet_belongs_to_opponent"
 			parameter:planet = {
@@ -862,10 +884,13 @@ liberate_planet = {
 			text = "war_demand_cede_planet_not_under_our_control"
 			parameter:planet = {
 				controller = {
-					fromfrom = {
-						is_war_participant = {
-							who = prev
-							side = from
+					OR = {
+						is_country = parameter:planet.owner
+						fromfrom = {
+							is_war_participant = {
+								who = prev
+								side = from
+							}
 						}
 					}
 				}
@@ -877,10 +902,13 @@ liberate_planet = {
 		if = {
 			limit = {
 				NOT = {
-					last_created_country = {
-						has_country_flag = timed_liberated_country
-					}	
-				}				
+					AND = {
+						exists = last_created_country
+						last_created_country = {
+							has_country_flag = timed_liberated_country
+						}
+					}
+				}
 			}
 			parameter:planet = {		
 				create_country = {
@@ -896,7 +924,7 @@ liberate_planet = {
 				}
 			}	
 			last_created_country = {
-				set_timed_country_flag = { flag = timed_liberated_country days = 3 }
+				set_timed_country_flag = { flag = timed_liberated_country days = 1 }
 				establish_communications_no_message = root
 				establish_communications_no_message = parameter:planet.owner
 				establish_contact = { who = root location = parameter:planet }
@@ -939,7 +967,7 @@ liberate_planet = {
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				this = { has_ai_personality_behaviour = liberator } 
+				has_ai_personality_behaviour = liberator
 			}
 		}
 
@@ -957,17 +985,15 @@ liberate_planet = {
 
 		modifier = {
 			factor = 0
-			has_ai_personality = fallen_empire_xenophobe
-		}
-
-		modifier = {
-			factor = 0
-			has_ai_personality = fallen_empire_materialist
-		}	
-
-		modifier = {
-			factor = 0
-			has_ai_personality = fallen_empire_spiritualist
+			is_country_type = fallen_empire
+			OR = {
+				NOT = { 
+					this = { has_ai_personality_behaviour = liberator } 
+				}		
+				parameter:planet = {
+					is_capital = yes
+				}
+			}
 		}
 	}
 	
@@ -1075,16 +1101,13 @@ liberate_country = {
 		}
 		valid = {
 			parameter:country = {
-				NOT = {
-					any_owned_planet = {
-						controller = {
-							from = {
-								from = {
-									is_war_participant = {
-										who = prevprev
-										side = prev
-									}
-								}
+				any_owned_planet = {
+					count = all
+					controller = {
+						fromfrom = {
+							is_war_participant = {
+								who = prev
+								side = root
 							}
 						}
 					}
@@ -1150,6 +1173,12 @@ abandon_planet = {
 			add = 0.8
 			calc = pop_count
 		}
+		
+		scaled_modifier = {
+			scope = parameter:planet.owner
+			div = 0.05
+			calc = planets_in_country
+		}		
 	}
 	
 	potential = {
@@ -1182,8 +1211,17 @@ abandon_planet = {
 		}
 		subject_can_diplomacy = this
 		parameter:planet = {
-			is_neighbor_of = root
-			is_capital = no
+			OR = {
+				is_capital = no
+				AND = {
+					root = { has_ai_personality = fallen_empire_spiritualist }
+					has_modifier = "holy_planet"
+				}
+				OR = {
+					root = { has_ai_personality = fallen_empire_spiritualist }
+					is_planet_class = pc_nuked
+				}	
+			}
 		}		
 	}
 	
@@ -1235,7 +1273,21 @@ abandon_planet = {
 	ai_weight = {
 		base = 100
 		
-		
+		modifier = {
+			factor = 0.0
+			parameter:planet = {
+				NOT = { is_neighbor_of = root }
+				OR = {
+					NOT = { root = { has_ai_personality = fallen_empire_spiritualist } }
+					NOT = { has_modifier = "holy_planet" }
+				}
+				OR = {
+					NOT = { root = { has_ai_personality = fallen_empire_spiritualist } }
+					NOT = { is_planet_class = pc_nuked }
+				}		
+			}
+		}
+			
 		modifier = {
 			factor = 10.0
 			has_ai_personality = fallen_empire_xenophobe
@@ -1243,7 +1295,10 @@ abandon_planet = {
 		
 		modifier = {
 			factor = 10.0
-			parameter:planet = { has_planet_modifier = "pm_holy_planet" }
+			OR = {
+				parameter:planet = { has_modifier = "holy_planet" }
+				parameter:planet = { is_planet_class = pc_nuked }
+			}
 			has_ai_personality = fallen_empire_spiritualist
 		}
 		

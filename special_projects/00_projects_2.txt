@@ -170,8 +170,9 @@ special_project = {
 
 special_project = {
 	key = "OLD_GODS_BENEFACTRESS_PROJECT"
+	event_chain = old_gods_chain
 	#cost = 30
-	days_to_research = 30
+	days_to_research = 90
 	tech_department = society_technology
 	timelimit = -1
 	picture = GFX_evt_archaeological_dig
@@ -193,8 +194,9 @@ special_project = {
 
 special_project = {
 	key = "OLD_GODS_UNDAUNTED_PROJECT"
+	event_chain = old_gods_chain
 	#cost = 30
-	days_to_research = 30
+	days_to_research = 90
 	tech_department = engineering_technology
 	timelimit = -1
 	picture = GFX_evt_archaeological_dig
@@ -216,8 +218,9 @@ special_project = {
 
 special_project = {
 	key = "OLD_GODS_PERCIPIENT_PROJECT"
+	event_chain = old_gods_chain
 	#cost = 30
-	days_to_research = 30
+	days_to_research = 90
 	tech_department = physics_technology
 	timelimit = -1
 	picture = GFX_evt_archaeological_dig
@@ -441,7 +444,7 @@ special_project = {
 		skill > 2
 	}
 	
-	on_success = { from = { ship_event = { id = anomaly.233 } } }
+	on_success = { ship_event = { id = anomaly.233 } }
 	
 	on_fail = {
 	}

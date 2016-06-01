@@ -263,36 +263,42 @@ sector_separatists = {
 						}
 						owner = { country_event = { id = mandate.100 } }
 					}
-					parameter:sector = {
-						random_owned_pop = {
+					root.owner = {
+						random_owned_planet = {
 							limit = {
-								NOT = {
-									pop_has_trait = trait_robotic_1
-									pop_has_trait = trait_robotic_2
-									pop_has_trait = trait_robotic_3
+								exists = sector
+								sector = { is_same_value = parameter:sector }
+								any_pop = {
+									NOT = {
+										pop_has_trait = trait_robotic_1
+										pop_has_trait = trait_robotic_2
+										pop_has_trait = trait_robotic_3
+									}
 								}
 							}
-							species = { save_event_target_as = spawn_species }
-						}
-					}				
-					random_owned_pop = {
-						species = {
-							create_country = {
-								type = default
-								government = random
-								species = event_target:spawn_species
-								flag = random
-								ethos = random
-								ignore_initial_colony_error = yes
+							random_owned_pop = {
+								limit = {
+									NOT = {
+										pop_has_trait = trait_robotic_1
+										pop_has_trait = trait_robotic_2
+										pop_has_trait = trait_robotic_3
+									}
+								}
+								species = { save_event_target_as = spawn_species }
 							}
+						}
+						create_country = {
+							type = default
+							government = random
+							species = event_target:spawn_species
+							flag = random
+							ethos = random
+							ignore_initial_colony_error = yes
 						}
 					}
 					last_created_country = {
-						set_timed_country_flag = { flag = day_0 days = 1 }
-						root = {
-							owner = {
-								establish_communications = last_created_country
-							}
+						root.owner = {
+							establish_communications_no_message = last_created_country
 						}
 						parameter:sector = { debug_scope_type = sector
 							every_planet = {
@@ -302,6 +308,7 @@ sector_separatists = {
 										is_same_value = root.owner 
 									}
 								}
+								set_controller = last_created_country
 								set_owner = last_created_country
 							}
 						}
@@ -311,9 +318,6 @@ sector_separatists = {
 							subject_type = vassal
 						}
 					}
-					#owner = {
-					#	remove_sector = parameter:sector
-					#}
 					kill_pop_faction = yes
 				}
 			}
@@ -567,6 +571,13 @@ sector_separatists = {
 				hidden_effect = {
 					set_timed_pop_faction_flag = { flag = recent_sabotage days = 300 }
 					parameter:sector = { debug_scope_type = sector
+						random_planet = {
+							limit = {
+								exists = sector
+								sector = { is_same_value = prev }
+							}
+							save_event_target_as = planet
+						}
 						every_planet = {
 							limit = { is_colony = yes }
 							random_tile = {
@@ -645,19 +656,36 @@ sector_separatists = {
 			effect = {
 				custom_tooltip = "POP_FACTION_PLANET_SEPARATIST_REBELLION_DESC"
 				hidden_effect = {
-					pop_faction_event = { id = faction.100 }
-					parameter:sector = {
-						random_owned_pop = {
-							limit = {
-								NOT = {
-									pop_has_trait = trait_robotic_1
-									pop_has_trait = trait_robotic_2
-									pop_has_trait = trait_robotic_3
+						root.owner = {
+							random_owned_planet = {
+								limit = {
+									exists = sector
+									sector = { is_same_value = parameter:sector }
+									any_pop = {
+										NOT = {
+											pop_has_trait = trait_robotic_1
+											pop_has_trait = trait_robotic_2
+											pop_has_trait = trait_robotic_3
+										}
+									}
+								}
+								save_event_target_as = planet
+							}
+							event_target:planet = {
+								random_owned_pop = {
+									limit = {
+										NOT = {
+											pop_has_trait = trait_robotic_1
+											pop_has_trait = trait_robotic_2
+											pop_has_trait = trait_robotic_3
+										}
+									}
+									species = { save_event_target_as = spawn_species }
 								}
 							}
-							species = { save_event_target_as = spawn_species }
 						}
 					}
+					pop_faction_event = { id = faction.100 }
 					owner = {
 						#owner_species = { save_event_target_as = spawn_species }
 						switch = {

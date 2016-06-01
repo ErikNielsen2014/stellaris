@@ -2767,10 +2767,10 @@ special_project = {
 	}
 
 	abort_trigger = {
-		OR = {
-			NOT = { exists = FROMFROM }
-			has_communications = FROMFROM
-		}
+		#OR = {
+		#	NOT = { exists = FROMFROM }
+		#	has_communications = FROMFROM
+		#}
 	}
 
 	on_success = {
@@ -2802,10 +2802,10 @@ special_project = {
 	}
 
 	abort_trigger = {
-		OR = {
-			NOT = { exists = FROMFROM }
-			has_communications = FROMFROM
-		}
+		#OR = {
+		#	NOT = { exists = FROMFROM }
+		#	has_communications = FROMFROM
+		#}
 	}
 
 	on_success = {
@@ -2837,10 +2837,10 @@ special_project = {
 	}
 
 	abort_trigger = {
-		OR = {
-			NOT = { exists = FROMFROM }
-			has_communications = FROMFROM
-		}
+		#OR = {
+		#	NOT = { exists = FROMFROM }
+		#	has_communications = FROMFROM
+		#}
 	}
 
 	on_success = {
@@ -2872,10 +2872,10 @@ special_project = {
 	}
 
 	abort_trigger = {
-		OR = {
-			NOT = { exists = FROMFROM }
-			has_communications = FROMFROM
-		}
+		#OR = {
+		#	NOT = { exists = FROMFROM }
+		#	has_communications = FROMFROM
+		#}
 	}
 
 	on_success = {
@@ -2907,10 +2907,10 @@ special_project = {
 	}
 
 	abort_trigger = {
-		OR = {
-			NOT = { exists = FROMFROM }
-			has_communications = FROMFROM
-		}
+		#OR = {
+		#	NOT = { exists = FROMFROM }
+		#	has_communications = FROMFROM
+		#}
 	}
 
 	on_success = {

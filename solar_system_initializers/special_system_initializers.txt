@@ -654,7 +654,7 @@ special_init_03 = {
 	class = "sc_g"
 	asteroids_distance = 120
 
-	flags = { primitive_sol }
+	flags = { primitive_sol sol }
 	
 	planet = {
 		name = "Sol"
@@ -1512,7 +1512,7 @@ special_init_04 = {
 	class = "sc_g"
 	asteroids_distance = 120
 
-	flags = { nuked_sol }
+	flags = { nuked_sol sol }
 	
 	planet = {
 		name = "Sol"
@@ -3905,7 +3905,7 @@ com_sol_system = {
 	
 	class = "sc_g"
 	asteroids_distance = 120
-	flags = { sol_system com_sol }
+	flags = { sol_system com_sol sol }
 	
 	planet = {
 		name = "Sol"

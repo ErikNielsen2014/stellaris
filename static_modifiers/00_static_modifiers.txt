@@ -381,7 +381,7 @@ asteroid_belt = {
 
 natural_beauty = {
 	pop_environment_tolerance = 0.05
-	pop_happiness = 0.15
+	pop_happiness = 0.05
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	icon_frame = 1
@@ -888,10 +888,10 @@ spaceport_level_6 = {
 # Country modifiers
 ##########################################################################
 mineral_deficit = {
-	ship_armor_mult = -0.33
-	army_damage_mult = -0.33
-	ship_weapon_damage = -0.33
-	ship_shield_hp_mult = -0.33	
+	ship_armor_mult = -0.5
+	army_damage_mult = -0.5
+	ship_weapon_damage = -0.5
+	all_technology_research_speed = -0.5
 }
 
 influence_deficit = {
@@ -899,10 +899,12 @@ influence_deficit = {
 }
 
 energy_deficit = {
-	tile_resource_minerals_mult = -0.33
-	all_technology_research_speed = -0.33
-	planet_ship_build_speed_mult = -0.33
-	planet_army_build_speed_mult = -0.33
+	tile_resource_minerals_mult = -0.5
+	all_technology_research_speed = -0.5
+	planet_ship_build_speed_mult = -0.5
+	planet_army_build_speed_mult = -0.5
+	ship_shield_hp_mult = -0.5
+	ship_weapon_damage = -0.5
 }
 
 inefficient_planet_management = {

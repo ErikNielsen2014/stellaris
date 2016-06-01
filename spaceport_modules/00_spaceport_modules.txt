@@ -403,7 +403,7 @@ destroyer_assembly_yards = {
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
 	prerequisites = { "tech_spaceport_4" }
-	spaceport_level = 3
+	spaceport_level = 4
 	
 	cost = {
 		minerals = 300

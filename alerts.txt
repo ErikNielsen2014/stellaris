@@ -107,5 +107,10 @@ alerts = {
 	alert_resource_shortage = {
 		category = HIGH
 		sound = "alert_negative"
-	}	
+	}
+	
+	alert_research_missing_scientist = {
+		category = MEDIUM
+		sound = "alert_negative"
+	}
 }

@@ -17,6 +17,10 @@ democratic_election_faction = {
 			}
 		}
 	}
+
+	on_create = {
+		set_name = random
+	}
 	
 	hidden = yes
 	
@@ -115,12 +119,52 @@ democratic_election_faction = {
 			modifier = {
 				factor = 0
 				parameter:empire = {
-					has_ethic = ethic_fanatic_individualist
+					OR = {
+						has_ethic = ethic_individualist
+						has_ethic = ethic_fanatic_individualist
+					}
 				}
 			}
 		}
 	}
 	
+	mandate = {
+		key = "mandate_shipwright"
+		parameter_transfer = {}
+		weight = {
+			base = 20
+
+			modifier = {
+				factor = 0.3
+				parameter:empire = {
+					any_owned_leader = {
+						leader_of_faction = yes
+						has_mandate = "mandate_shipwright"
+					}
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				parameter:empire = {
+					used_naval_capacity_percent < 0.3
+				}
+			}
+
+			modifier = {
+				factor = 0
+				parameter:empire = {
+					OR = {
+						has_ethic = ethic_pacifist
+						has_ethic = ethic_fanatic_pacifist
+						used_naval_capacity_percent > 0.5
+						#max_naval_capacity > 500
+					}
+				}
+			}
+		}
+	}
+
 	on_set_leader = { # Effect that executes when a faction wants a leader
 		owner = {
 			random_owned_leader = {
@@ -131,22 +175,4 @@ democratic_election_faction = {
 			}
 		}
 	}
-
-	#on_create = {
-	#	set_name = random
-	#	set_support = 0.0
-	#	owner = {
-	#		random_owned_pop = {
-	#			limit = { 
-	#				OR = {
-	#					member_of_faction = no 
-	#					pop_faction = {
-	#						is_pop_faction_type = loyalist
-	#					}
-	#				}
-	#			}
-	#			set_pop_faction = ROOT
-	#		}
-	#	}
-	#}
 }

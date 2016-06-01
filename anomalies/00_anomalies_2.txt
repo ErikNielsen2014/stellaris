@@ -64,7 +64,8 @@ anomaly = {
 			has_country_flag = humans_early_space_age
 		}
 		owner = {
-			NOT = {
+			NOR = {
+				species_portrait = human
 				has_country_flag = human_1
 				has_country_flag = human_2
 				has_country_flag = found_pioneer
@@ -86,6 +87,7 @@ anomaly = {
 			OR = {
 				has_country_flag = human_1
 				has_country_flag = human_2
+				species_portrait = human
 			}
 			NOT = { has_country_flag = found_pioneer }
 		}
@@ -109,7 +111,8 @@ anomaly = {
 			}
 		}
 		owner = {
-			NOT = {
+			NOR = {
+				species_portrait = human
 				has_country_flag = human_1
 				has_country_flag = human_2
 				has_country_flag = found_pioneer
@@ -131,6 +134,7 @@ anomaly = {
 			OR = {
 				has_country_flag = human_1
 				has_country_flag = human_2
+				species_portrait = human
 			}
 			NOT = { has_country_flag = found_voyager }
 		}

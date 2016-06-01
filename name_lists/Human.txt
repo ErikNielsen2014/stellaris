@@ -75,10 +75,10 @@ Human = {
 		terraform_station = { }
 		observation_station = { }
 		outpost_station = {
-			random_names = {
+			#random_names = {
 				"Far Reach" Watchtower Sphered Influential Assertion SPACERAD "Watchful Eye" Sentinel Demarcator "Frontier Finalizer" "Ever Watchful" Divider Bastion "Home Turf" Wide
-			}
-			sequential_name = "%O% Frontier Outpost"
+			#}
+			#sequential_name = "%O% Frontier Outpost"
 		}
 		
 		transport = {

@@ -41,10 +41,10 @@ hostile_init_01 = {
 			event_target:crystal_country = {
 				create_fleet = { name = "Crystalline Entity" }
 				last_created_fleet = {
+					set_owner = event_target:crystal_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 150
-					set_owner = event_target:crystal_country
 					create_ship = {
 						name = "Delta"
 						design = "Large Crystal Entity Blue"
@@ -129,10 +129,10 @@ hostile_init_02 = {
 			if = { limit = { exists = event_target:blue2_trigger_3 }
 				create_fleet = { name = "Crystalline Entity" }
 				last_created_fleet = {
+					set_owner = event_target:crystal_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 150
-					set_owner = event_target:crystal_country
 					create_ship = {
 						name = "Delta"
 						design = "Large Crystal Entity Blue"
@@ -257,10 +257,10 @@ hostile_init_03 = {
 		event_target:crystal_country = {
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = self
 				set_aggro_range = 100
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Delta"
 					design = "Large Crystal Entity Green"
@@ -378,10 +378,10 @@ hostile_init_04 = {
 			save_event_target_as = green2_owner
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 40
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Omega"
 					design = "Small Crystal Entity Green"
@@ -432,10 +432,10 @@ hostile_init_04 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = self
 				set_aggro_range = 40
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Omega"
 					design = "Small Crystal Entity Green"
@@ -486,10 +486,10 @@ hostile_init_04 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = self
 				set_aggro_range = 40
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Omega"
 					design = "Small Crystal Entity Green"
@@ -577,7 +577,6 @@ hostile_init_05 = {
 	}
 	
 	init_effect = {
-		create_crystal_country = yes
 		random_system_planet = {
 			limit = {
 				is_star = no
@@ -618,14 +617,15 @@ hostile_init_05 = {
 			}
 			save_event_target_as = red_trigger_4
 		}
+		create_crystal_country = yes
 		event_target:crystal_country = {
 			create_fleet = { name = "Crystalline Entity" }
 			save_event_target_as = red_crystals
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 40
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Delta"
 					design = "Large Crystal Entity Red"
@@ -641,6 +641,7 @@ hostile_init_05 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 30
@@ -660,10 +661,10 @@ hostile_init_05 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 40
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Omega"
 					design = "Large Crystal Entity Red"
@@ -679,10 +680,10 @@ hostile_init_05 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 30
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Alpha"
 					design = "Large Crystal Entity Red"
@@ -780,10 +781,10 @@ hostile_init_06 = {
 			create_fleet = { name = "Crystalline Entity" }
 			save_event_target_as = red2_crystals
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 100
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Delta"
 					design = "Large Crystal Entity Red"
@@ -815,10 +816,10 @@ hostile_init_06 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 100
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Epsilon"
 					design = "Large Crystal Entity Red"
@@ -850,10 +851,10 @@ hostile_init_06 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 100
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Omega"
 					design = "Large Crystal Entity Red"
@@ -885,10 +886,10 @@ hostile_init_06 = {
 			}
 			create_fleet = { name = "Crystalline Entity" }
 			last_created_fleet = {
+				set_owner = event_target:crystal_country
 				set_fleet_stance = aggressive
 				set_aggro_range_measure_from = return_point
 				set_aggro_range = 100
-				set_owner = event_target:crystal_country
 				create_ship = {
 					name = "Alpha"
 					design = "Large Crystal Entity Red"
@@ -961,10 +962,10 @@ hostile_init_07 = {
 				save_event_target_as = elite1_owner
 				create_fleet = { name = "Crystalline Elites" }
 				last_created_fleet = {
+					set_owner = event_target:crystal_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 500
-					set_owner = event_target:crystal_country
 					create_ship = {
 						name = "Delta"
 						design = "Large Crystal Entity Red Elite"
@@ -993,10 +994,10 @@ hostile_init_07 = {
 				}
 				create_fleet = { name = "Crystalline Elites" }
 				last_created_fleet = {
+					set_owner = event_target:crystal_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 500
-					set_owner = event_target:crystal_country
 					create_ship = {
 						name = "Delta"
 						design = "Large Crystal Entity Yellow Elite"
@@ -1025,10 +1026,10 @@ hostile_init_07 = {
 				}
 				create_fleet = { name = "Crystalline Elites" }
 				last_created_fleet = {
+					set_owner = event_target:crystal_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 500
-					set_owner = event_target:crystal_country
 					create_ship = {
 						name = "Delta"
 						design = "Large Crystal Entity Blue Elite"
@@ -1122,10 +1123,10 @@ hostile_init_08 = {
 				set_aggro_range = 500
 				create_fleet = { name = "Void Cloud" }
 				last_created_fleet = {
+					set_owner = event_target:cloud_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 500
-					set_owner = event_target:cloud_country
 					create_ship = {
 						name = "XUUL"
 						design = "Cloud Entity"
@@ -1177,10 +1178,10 @@ hostile_init_09 = {
 				save_event_target_as = voidhome_owner
 				create_fleet = { name = "Abyssal Host" }
 				last_created_fleet = {
+					set_owner = event_target:cloud_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = return_point
 					set_aggro_range = 150
-					set_owner = event_target:cloud_country
 					create_ship = {
 						name = "YAQU"
 						design = "Cloud Entity"
@@ -1201,10 +1202,10 @@ hostile_init_09 = {
 				}
 				create_fleet = { name = "Chasmal Horde" }
 				last_created_fleet = {
+					set_owner = event_target:cloud_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = return_point
 					set_aggro_range = 150
-					set_owner = event_target:cloud_country
 					create_ship = {
 						name = "ANED"
 						design = "Cloud Entity"
@@ -1269,10 +1270,10 @@ hostile_init_10 = {
 			event_target:amoeba_country = {
 				create_fleet = { name = "Space Amoeba" }
 				last_created_fleet = {
+					set_owner = event_target:amoeba_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 100
-					set_owner = event_target:amoeba_country
 					create_ship = {
 						name = "Ortus"
 						design = "Large Space Organism"
@@ -1334,10 +1335,10 @@ hostile_init_11 = {
 			event_target:amoeba_country = {
 				create_fleet = { name = "Space Amoeba" }
 				last_created_fleet = {
+					set_owner = event_target:amoeba_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
 					set_aggro_range = 20
-					set_owner = event_target:amoeba_country
 					random_list = {
 						20 = {
 							set_fleet_flag = tiyanki_hunter
@@ -1549,10 +1550,10 @@ hostile_init_12 = {
 				save_event_target_as = mining_drones
 				create_fleet = { name = "Ancient Mining Drones" }
 				last_created_fleet = {
+					set_owner = event_target:drone_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = return_point
 					set_aggro_range = 150
-					set_owner = event_target:drone_country
 					create_ship = {
 						name = "Drone 2432-D"
 						design = "Mining"
@@ -1744,10 +1745,10 @@ hostile_init_13 = {
 				save_event_target_as = mining_drones2
 				create_fleet = { name = "Ancient Mining Drones" }
 				last_created_fleet = {
+					set_owner = event_target:drone_country
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = return_point
 					set_aggro_range = 200
-					set_owner = event_target:drone_country
 					create_ship = {
 						name = "Drone 1832-D"
 						design = "Mining"
@@ -1830,10 +1831,10 @@ hostile_init_14 = {
 				save_event_target_as = tiyanki_country2
 				create_fleet = { name = "Gas Grazers" }
 				last_created_fleet = {
+					set_owner = event_target:tiyanki_country
 					set_fleet_stance = passive
 					set_aggro_range_measure_from = return_point
 					set_aggro_range = 0
-					set_owner = event_target:tiyanki_country
 					create_ship = {
 						name = "Dhenu"
 						design = "Tiyanki Cow"

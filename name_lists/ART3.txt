@@ -38,10 +38,10 @@ ART3 = {
 		terraform_station = { }
 		observation_station = { }
 		outpost_station = {
-			random_names = {
+			#random_names = {
 				"Mecinfic Outpost" "Huxinfic Outpost" "Ytranfic Outpost" "Cabbinfic Outpost" "Lopinfic Outpost" "Draxinfic Outpost" "Ekerinfic Outpost" "Xapinfic Outpost"
-			}
-			sequential_name = "%O% Frontier Outpost"
+			#}
+			#sequential_name = "%O% Frontier Outpost"
 		}
 	
 		military_station_small = {}

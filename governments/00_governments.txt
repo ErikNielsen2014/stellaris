@@ -310,7 +310,7 @@ theocratic_republic = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		country_core_sector_planet_cap = 2
+		country_core_sector_planet_cap = 1
 	}
 	
 	uses_mandates = yes
@@ -341,7 +341,7 @@ transcendent_republic = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		country_core_sector_planet_cap = 4
+		country_core_sector_planet_cap = 2
 	}
 	
 	uses_mandates = yes
@@ -467,6 +467,7 @@ transcendent_oligarchy = {
 divine_mandate = {
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -498,6 +499,7 @@ transcendent_empire = {
 	prerequisites = { "tech_galactic_administration" }
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -699,6 +701,7 @@ illuminated_technocracy = {
 despotic_hegemony = {
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -728,6 +731,7 @@ ai_overlordship = {
 	prerequisites = { "tech_galactic_administration" }
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 		
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -929,6 +933,7 @@ irenic_protectorate = {
 enlightened_monarchy = {
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -961,6 +966,7 @@ irenic_monarchy = {
 	prerequisites = { "tech_galactic_administration" }
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -1150,6 +1156,7 @@ despotic_empire = {
 	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -1181,6 +1188,7 @@ star_empire = {
 	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }

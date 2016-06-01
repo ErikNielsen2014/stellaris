@@ -32,6 +32,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_1"
 	projectile_gfx = "mass_driver_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
 }
 
 weapon_component_template = {
@@ -54,6 +55,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_1"
 	projectile_gfx = "mass_driver_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
 }
 
 weapon_component_template = {
@@ -76,6 +78,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_1"
 	projectile_gfx = "mass_driver_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Coilguns
@@ -99,6 +102,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_2"
 	projectile_gfx = "coilgun_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -121,6 +125,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_2"
 	projectile_gfx = "coilgun_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -143,6 +148,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_2"
 	projectile_gfx = "coilgun_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Railguns
@@ -166,6 +172,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_3"
 	projectile_gfx = "railgun_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -188,6 +195,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_3"
 	projectile_gfx = "railgun_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -210,6 +218,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_3"
 	projectile_gfx = "railgun_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Advanced Railguns
@@ -233,6 +242,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_4"
 	projectile_gfx = "advanced_railgun_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -255,6 +265,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_4"
 	projectile_gfx = "advanced_railgun_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -277,6 +288,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_4"
 	projectile_gfx = "advanced_railgun_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Gauss Cannons
@@ -300,6 +312,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_5"
 	projectile_gfx = "gauss_cannon_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -322,6 +335,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_5"
 	projectile_gfx = "gauss_cannon_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -344,6 +358,7 @@ weapon_component_template = {
 	component_set = "MASS_DRIVER_5"
 	projectile_gfx = "gauss_cannon_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 
@@ -437,6 +452,7 @@ weapon_component_template = {
 	component_set = "KINETIC_ARTILLERY_1"
 	projectile_gfx = "kinetic_artillery"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
 }
 
 # ## Kinetic Artillery 2
@@ -460,6 +476,7 @@ weapon_component_template = {
 	component_set = "KINETIC_ARTILLERY_2"
 	projectile_gfx = "adv_kinetic_artillery"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
 }
 
 
@@ -488,6 +505,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_1"
 	projectile_gfx = "auto_cannons_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 
@@ -511,6 +529,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_1"
 	projectile_gfx = "auto_cannons_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 
@@ -534,6 +553,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_1"
 	projectile_gfx = "auto_cannons_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Autocannons 2
@@ -557,6 +577,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_2"
 	projectile_gfx = "ripper_auto_cannons_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -579,6 +600,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_2"
 	projectile_gfx = "ripper_auto_cannons_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -601,6 +623,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_2"
 	projectile_gfx = "ripper_auto_cannons_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 # ## Autocannons 3
@@ -624,6 +647,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_3"
 	projectile_gfx = "stormfire_auto_cannons_s"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }
 
 weapon_component_template = {
@@ -646,6 +670,7 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_3"
 	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
 }
 
 weapon_component_template = {
@@ -668,4 +693,5 @@ weapon_component_template = {
 	component_set = "AUTOCANNON_3"
 	projectile_gfx = "stormfire_auto_cannons_l"
 	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
 }

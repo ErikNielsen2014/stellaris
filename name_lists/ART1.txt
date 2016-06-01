@@ -47,10 +47,10 @@ ART1 = {
 		terraform_station = { }
 		observation_station = { }
 		outpost_station = {
-			random_names = {
+			#random_names = {
 				Sul-Ta-Vor El-Ta-Vor Gul-Ta-Vor Park-Ta-Vor Lorug-Ta-Vor Urakt-Ta-Vor Iliku-Ta-Vor
-			}
-			sequential_name = "%O% Frontier Outpost"
+			#}
+			#sequential_name = "%O% Frontier Outpost"
 		}
 	
 		military_station_small = {}

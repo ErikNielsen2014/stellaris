@@ -18,11 +18,9 @@ country_edict = {
 		weight = 1
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
-					has_ethic = ethic_collectivist
-					has_ethic = ethic_fanatic_collectivist
-				}
+			NOR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
 			}
 		}		
 	}	
@@ -44,11 +42,9 @@ country_edict = {
 		weight = 1
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
-					has_ethic = ethic_individualist
-					has_ethic = ethic_fanatic_individualist
-				}
+			NOR = {
+				has_ethic = ethic_individualist
+				has_ethic = ethic_fanatic_individualist
 			}
 		}		
 	}
@@ -86,11 +82,9 @@ country_edict = {
 	influence_cost = 1
 		
 	allow = {
-		NOT = {
-			OR = {
-				has_country_edict = physics_research_focus
-				has_country_edict = society_research_focus
-			}
+		NOR = {
+			has_country_edict = physics_research_focus
+			has_country_edict = society_research_focus
 		}
 	}
 	
@@ -110,11 +104,9 @@ country_edict = {
 	influence_cost = 1
 		
 	allow = {
-		NOT = {
-			OR = {
-				has_country_edict = engineering_research_focus
-				has_country_edict = society_research_focus
-			}
+		NOR = {
+			has_country_edict = engineering_research_focus
+			has_country_edict = society_research_focus
 		}
 	}
 	
@@ -134,11 +126,9 @@ country_edict = {
 	influence_cost = 1
 		
 	allow = {
-		NOT = {
-			OR = {
-				has_country_edict = engineering_research_focus
-				has_country_edict = physics_research_focus
-			}
+		NOR = {
+			has_country_edict = engineering_research_focus
+			has_country_edict = physics_research_focus
 		}
 	}
 	
@@ -202,15 +192,13 @@ country_edict = {
 	influence_cost = 2
 		
 	allow = {
-		AND = {
-			OR = {
-				has_policy_flag = slavery_allowed_xenos_only
-				has_policy_flag = slavery_allowed_all
-			}
-			NOT = {
-				has_ethic = "ethic_fanatic_collectivist"
-				has_ethic = "ethic_collectivist"
-			}
+		OR = {
+			has_policy_flag = slavery_allowed_xenos_only
+			has_policy_flag = slavery_allowed_all
+		}
+		NOR = {
+			has_ethic = "ethic_fanatic_collectivist"
+			has_ethic = "ethic_collectivist"
 		}
 	}
 	
@@ -233,7 +221,7 @@ country_edict = {
 		
 	}
 
-	influence_cost = 1	
+	influence_cost = 0
 
 	potential = {
 		has_country_flag = crystal_sonar_edict_available
@@ -376,10 +364,10 @@ country_edict = {
 		country_leader_cap = 1
 	}
 	
-	length = 360
+	influence_cost = 1
 
 	potential = {
-		has_country_flag = masters_writings_philosophy_translated
+		has_country_flag = edict_masters_writings_philosophy
 	}
 
 	allow = {
@@ -400,7 +388,7 @@ country_edict = {
 	influence_cost = 1
 
 	potential = {
-		has_country_flag = masters_writings_war_translated
+		has_country_flag = edict_masters_writings_war
 	}
 
 	allow = {

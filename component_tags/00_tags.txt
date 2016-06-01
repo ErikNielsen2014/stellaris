@@ -11,3 +11,8 @@ weapon_type_point_defense
 small
 medium
 large
+weapon_role_anti_armor
+weapon_role_anti_shield
+weapon_role_long_range
+weapon_role_short_range
+weapon_role_point_defense

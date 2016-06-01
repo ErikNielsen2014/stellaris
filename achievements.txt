@@ -21,7 +21,7 @@ achievement_minerals_1 = {
 		has_monthly_income = 
 		{
 			resource = minerals
-			value > 250
+			value > 249
 		}
 	}
 }
@@ -37,7 +37,7 @@ achievement_minerals_2 = {
 		has_monthly_income = 
 		{
 			resource = minerals
-			value > 1000
+			value > 999
 		}
 	}
 }
@@ -50,7 +50,7 @@ achievement_economy_1 = {
 	}
 	
 	happened = {
-		energy > 1000
+		energy > 999
 	}
 }
 
@@ -62,7 +62,7 @@ achievement_economy_2 = {
 	}
 	
 	happened = {
-		energy > 5000
+		energy > 4999
 	}
 }
 
@@ -165,6 +165,7 @@ achievement_robots = {
 	happened = {
 		any_owned_pop = {
 			is_species_class = "ROBOT"
+			is_growing = no
 		}
 	}
 }

@@ -10,6 +10,7 @@
 military = {
 	production_targets = {
 		minerals
+		energy
 	}
 	
 	ships = {
@@ -33,7 +34,7 @@ industrial = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 20
 	}
 }
 
@@ -63,6 +64,6 @@ financial = {
 	}
 	
 	ai_weight = {
-		weight = 50
+		weight = 30
 	}
 }

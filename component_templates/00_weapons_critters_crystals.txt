@@ -16,6 +16,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 		
 	component_set = "BLUE_CRYSTAL_WEAPON_1"
@@ -34,6 +35,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 			
 	component_set = "BLUE_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_blue_crystal_weapon_1" }
@@ -50,6 +52,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 			
 	component_set = "BLUE_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_blue_crystal_weapon_1" }
@@ -64,8 +67,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 			
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_green_crystal_weapon_1" }
@@ -80,8 +84,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_green_crystal_weapon_1" }
@@ -96,8 +101,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_green_crystal_weapon_1" }
@@ -112,8 +118,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_yellow_crystal_weapon_1" }
@@ -128,8 +135,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_yellow_crystal_weapon_1" }
@@ -144,8 +152,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_yellow_crystal_weapon_1" }
@@ -160,8 +169,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_red_crystal_weapon_1" }
@@ -176,8 +186,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_red_crystal_weapon_1" }
@@ -192,8 +203,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
 	prerequisites = { "tech_red_crystal_weapon_1" }
@@ -211,6 +223,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -226,6 +239,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -241,6 +255,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -254,8 +269,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -269,8 +285,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -284,8 +301,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_green_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "green_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -299,8 +317,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -314,8 +333,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -329,8 +349,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_yellow_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "yellow_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -344,8 +365,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -359,8 +381,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }
@@ -374,8 +397,9 @@ weapon_component_template = {
 	type = instant
 	icon = "GFX_ship_part_red_crystal_weapon_1"
 	icon_frame = 1
-	projectile_gfx = "crystal_ship_projectile"
+	projectile_gfx = "red_crystal_ship_projectile"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	cost = @critter_cost_value
 }

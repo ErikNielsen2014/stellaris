@@ -197,7 +197,7 @@ mandate_emancipation = {
 		# enslaved xenos, Fanatic Xenophile
 		modifier = {
 			add = 30
-			pop_has_ethic = ethic_xenophile
+			pop_has_ethic = ethic_fanatic_xenophile
 			owner = {
 				any_owned_pop = {
 					NOT = { is_same_species = owner_main_species }
@@ -239,7 +239,7 @@ mandate_emancipation = {
 		# enslaved xenos, Fanatic Xenophobe
 		modifier = {
 			add = -30
-			pop_has_ethic = ethic_xenophobe
+			pop_has_ethic = ethic_fanatic_xenophobe
 			owner = {
 				any_owned_pop = {
 					NOT = { is_same_species = owner_main_species }
@@ -453,6 +453,25 @@ mandate_slaver = {
 			add = 40
 			pop_has_ethic = ethic_fanatic_collectivist
 		}
+
+		# Individualist
+		modifier = {
+			factor = 0.2
+			pop_has_ethic = ethic_individualist
+		}
+		# Fanatic Individualist
+		modifier = {
+			factor = 0
+			pop_has_ethic = ethic_fanatic_individualist
+		}
+		
+		# Slavery is outlawed
+		modifier = {
+			factor = 0
+			owner = {
+				has_policy_flag = slavery_not_allowed
+			}
+		}		
 	}
 
 	# This = Leader
@@ -727,16 +746,13 @@ mandate_shipwright = {
 		# Fanatic Materialist
 		modifier = {
 			add = 20
-			pop_has_ethic = ethic_militarist
+			pop_has_ethic = ethic_fanatic_militarist
 		}
 		# Few military ships
 		modifier = {
 			add = 15
 			owner = {
-				count_owned_ships = {
-					limit = { is_ship_class = shipclass_military }
-					count < 8
-				}
+				used_naval_capacity_percent < 0.3
 			}
 		}
 		modifier = {

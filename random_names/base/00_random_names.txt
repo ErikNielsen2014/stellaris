@@ -63,6 +63,7 @@ black_hole_names = {
 	"Heaven's Gate"
 	"Dubious Abyss"
 	"Screeching Abyss"
+	"Blorg's Bane"
 	"Howling Vortex"
 	"Gaping Maw"
 	"Eternal Horizon"
@@ -1320,6 +1321,7 @@ star_names = {
 	"Wir Thosk"
 	Thegglan
 	Iriamus
+	Belgium
 	Trimus
 	Porabim
 	Simtinasca
@@ -1361,6 +1363,7 @@ star_names = {
 	Xirak
 	Hythara
 	Rothyr
+	Faghihinejad
 	Baggol
 	Izval
 	Mendoc
@@ -1394,7 +1397,10 @@ star_names = {
 	Vermillion
 	Mar-Adetta
 	Tiamat
+	Higashik-Ata
+	Tronde
 	"Zulei Cro"
+	Olbers
 	Julau
 	Ar'Doqd
 	Matsonia
@@ -1402,9 +1408,14 @@ star_names = {
 	Nugaan
 	T'Vilkait
 	Cknoor
+	Kazoo
+	Yump
 	"Fia Nita"
 	"Bal Durk"
 	"Etan Stela"
+	Kazon
+	Lazon
+	Vanniko
 }
 
 nebula_names = {

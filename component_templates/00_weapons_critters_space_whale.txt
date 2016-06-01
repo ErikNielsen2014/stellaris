@@ -19,6 +19,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 		
 	component_set = "SPACE_WHALE_WEAPON_1"
 	prerequisites = { "tech_space_whale_weapon_1" }
@@ -35,6 +36,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 		
 	component_set = "SPACE_WHALE_WEAPON_1"
 	prerequisites = { "tech_space_whale_weapon_1" }
@@ -51,6 +53,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	
 	component_set = "SPACE_WHALE_WEAPON_1"
 	prerequisites = { "tech_space_whale_weapon_1" }

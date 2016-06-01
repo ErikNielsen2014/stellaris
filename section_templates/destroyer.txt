@@ -8,7 +8,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Missiles
-	weapon_preferences = { weapon_type_explosive }
+	weapon_preferences = { weapon_role_long_range }
 	ai_weight = {
 		modifier = {
 			factor = 4.0
@@ -57,7 +57,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Lasers
-	weapon_preferences = { weapon_type_energy }
+	weapon_preferences = { weapon_role_anti_armor }
 	ai_weight = {
 		modifier = {
 			factor = 4.0
@@ -108,7 +108,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_role_anti_shield }
 	ai_weight = {
 		modifier = {
 			factor = 4.0
@@ -145,14 +145,14 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Point Defense
-	weapon_preferences = { weapon_type_point_defense }
+	weapon_preferences = { weapon_role_short_range weapon_role_point_defense }
 	ai_weight = {
 		modifier = {
 			factor = 100.0
 			NOT = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = fanatical_purifiers
+				has_ai_personality = fanatic_purifiers
 				has_ai_personality = metalhead
 				has_ai_personality = hive_mind
 			}
@@ -193,7 +193,7 @@ ship_section_template = {
 			OR = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = fanatical_purifiers
+				has_ai_personality = fanatic_purifiers
 				has_ai_personality = metalhead
 				has_ai_personality = hive_mind
 			}

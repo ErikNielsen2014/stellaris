@@ -1394,11 +1394,3 @@ pm_ancient_weapon = {
 	
 	modifier = "ancient_weapon"
 }
-
-pm_holy_planet = {
-	spawn_chance = {
-		#None - From anomaly 
-	}
-	
-	modifier = "holy_planet"
-}
